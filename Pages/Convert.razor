@@ -1,0 +1,57 @@
+@page "/convert"
+<!--sidans titel-->
+<PageTitle>Konvertering</PageTitle>
+
+<h1>Konvertering</h1>
+<div class="line"></div>
+<!--meter till fot-->
+<section class="form mb-4">
+<h2>Meter till fot</h2>
+<label for="meter">Meter:</label>
+<input type="number" class="form-control" @bind="meter">
+ <br>
+ <button class="btn" @onclick="ConvertMeter">Konvertera</button>
+ <p>Antal foot: @feet</p>
+</section>
+
+<!--km till mph-->
+<section class="form">
+<h2>Km till mph
+</h2>
+<label for="km">Km:</label>
+<input type="number" class="form-control" @bind="km" >
+<br>
+<button class="btn" @onclick="ConvertKm">Konvertera</button>
+ <p>Antal mph: @miles</p>
+</section>
+
+
+ @code {
+   // Variabler för att hålla värdet
+  private double feet;
+
+  private double meter;
+
+  // Metod för att konvertera meter till fot
+  private void  ConvertMeter()
+  {
+    feet = meter * 3.28;
+    //avrunda 1 decimal
+      feet = Math.Round(feet, 1);
+
+
+  }
+ // Variabler för att hålla värdet
+  private double km;
+  private double miles;
+
+  // Metod för att konvertera kilometer till mph
+  private void ConvertKm()
+  {
+    miles = km * 0.621371;
+     // Avrunda miles till närmaste heltal
+    miles = Math.Round(miles, 0);
+
+ 
+  }
+ }

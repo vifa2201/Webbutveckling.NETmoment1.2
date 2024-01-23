@@ -1,0 +1,57 @@
+[
+    {
+      "Name": "Bella",
+      "Year": "2",
+      "Breed": "Golden Retriver",
+      "Color": "Guld"
+    },
+    {
+      "Name": "Max",
+      "Year": "3",
+      "Breed": "Siberian Husky",
+      "Color": "Svart och vit"
+    },
+    {
+      "Name": "Charlie",
+      "Year": "5",
+      "Breed": "Beagle",
+      "Color": "Brun och Vit"
+    },
+    {
+      "Name": "Sammi",
+      "Year": "7",
+      "Breed": "King Charles Spaniel",
+      "Color": "Svart och vit"
+    },
+    {
+        "Name": "Stella",
+        "Year": "9",
+        "Breed": "Lagotto",
+        "Color": "Vit och brun"
+      },
+      {
+        "Name": "Sigge",
+        "Year": "1",
+        "Breed": "Tax",
+        "Color": "Brun"
+      },
+      {
+        "Name": "Elsa",
+        "Year": "2",
+        "Breed": "Akita",
+        "Color": "Vit och ljus brun"
+      },
+      {
+        "Name": "Molly",
+        "Year": "4",
+        "Breed": "Chiuaha",
+        "Color": "Vit"
+      }, 
+      {
+        "Name": "Noel",
+        "Year": "5",
+        "Breed": "Collie",
+        "Color": "Svart, brun och vit"
+      }
+  ]
+  

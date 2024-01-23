@@ -1,0 +1,53 @@
+@page "/json"
+@inject HttpClient Http
+<h1>Json</h1>
+<div class="line"></div>
+
+<section class="form mt-4">
+<h2>Hundrar</h2>
+
+@if(dogs == null) {
+    <p>Laddar.....</p>
+}else {
+    <table class="table able-hover">
+        <thead>
+            <tr>
+                <th>Namn:</th>
+                <th>År:</th>
+                <th>Ras:</th>
+                <th>Färg:</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var dog in dogs) 
+            {
+                <tr>
+                    <td>@dog.Name</td>
+                    <td>@dog.Year</td>
+                    <td>@dog.Breed</td>
+                    <td>@dog.Color</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+</section>
+@code {
+    private Dog[]? dogs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        dogs = await Http.GetFromJsonAsync<Dog[]>("data/dogs2.json");
+    }
+
+    public class Dog
+    {
+        public string? Name { get; set; }
+        public string? Year { get; set; }
+
+        public string? Breed { get; set; }
+
+        public string? Color { get; set; }
+
+    }
+}

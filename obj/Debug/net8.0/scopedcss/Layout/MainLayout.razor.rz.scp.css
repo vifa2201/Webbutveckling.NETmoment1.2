@@ -1,0 +1,9 @@
+.page[b-omvasywgby] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-omvasywgby] {
+    flex: 1;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Bella",
+    "Year": "2",
+    "Breed": "Labrador Retriever",
+    "Color": "Yellow"
+  },
+  {
+    "Name": "Max",
+    "Year": "3",
+    "Breed": "Siberian Husky",
+    "Color": "Black and White"
+  },
+  {
+    "Name": "Charlie",
+    "Year": "5",
+    "Breed": "Beagle",
+    "Color": "Brown and White"
+  },
+  {
+    "Name": "Luna",
+    "Year": "1",
+    "Breed": "German Shepherd",
+    "Color": "Black and Red"
+  }
+]
